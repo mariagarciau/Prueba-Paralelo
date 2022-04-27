@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     pool = Pool(processes=4)
     data = pool.map(scrape, urls)
-    pool.close()    
+    pool.close()
     print()
     for row in data:
         print(row)
